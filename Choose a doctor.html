@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Choose a doctor</title>
+<style type="text/css">
+
+	body{
+
+		background-color: #29465B;
+	}
+
+.inputbox input,select{
+	height: 3rem;
+  width: 49%;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  color:var(--black);
+  text-align: center;
+  color: #000000;
+  border-radius: 10px;
+  border-color: #EB5406;
+
+}
+.inputbox{
+	text-align: center;
+
+	
+}
+ .section img{
+	height: 10rem;
+  width:10rem;
+  margin-left: 2rem;
+  box-shadow: 2px 2px 2px 2px green;
+  margin-top: 10px;
+  border-radius: 50px;
+  
+}
+
+
+.section img:hover{
+transform:scaleY(1.2);
+}
+
+
+.visit{
+	border-color:red;
+	border-style:inset;
+	border-width: 1px;
+	height: 2rem;
+  width:20%;
+  padding: 0 0;
+  margin: 1rem 1rem;
+  font-size:60%;
+  padding-bottom: 4px;
+  background-color: red;
+  color: lightyellow;
+  box-shadow: 5px 5px white;
+  text-align: center; 
+  margin-top: 10rem;
+
+
+
+}
+
+
+.visit:hover{
+	background-color: olive;
+	box-shadow: .1rem .5rem var(--blue),0 .3rem .5rem rgba(0,0,0,.3);
+	transform: skewY(10deg);
+	cursor: pointer;
+}
+.section{
+	text-align: left;
+	margin-left: 2rem;
+
+
+
+
+}
+
+.section .time{
+	text-align: left;
+	height:1rem;
+  width:10%;
+  padding: 0 0;
+  margin: 1rem 3rem;
+  font-size:1rem;
+  padding-bottom: 4px;
+
+
+}
+  .section h1{
+  	color: tomato;
+
+  }
+  .section h2, h3{
+  	color: whitesmoke;
+
+  }
+  
+  .time{
+  	width: 30%;
+  	margin-left: 3rem;
+  	margin-top: 9rem;
+  	text-align: left;
+	
+
+
+
+}
+  .box{
+  	display: flex;
+  	box-shadow: 1px 1px 1px 1px white;
+  	margin-top: 10px;
+  }
+
+  header{
+  width: 100%;
+  position: fixed;
+  top: 0; left:0;
+  padding: 2rem 1rem;
+  z-index: 1000;
+  
+       }
+      header ul{
+       	list-style-type: none;
+       }
+
+      
+   
+        header .container{
+        	text-align:right;
+        	justify-content: space-between;
+        	margin-right: 10%;
+
+        	
+        }
+ 
+   header a{
+   	color: tomato;
+   	text-decoration: none;
+   	font-size: 20px;
+   	text-shadow: 2px 1px green;
+
+
+   }
+
+   header  ul li{
+   	padding: 10px;
+   }
+
+  header a:hover{
+  color:white;
+  text-decoration:underline;
+                }
+    .section .box-container{
+    	
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  padding-bottom: 5rem;
+}
+
+.PathLabs .box {
+	display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+ 
+}
+  .PathLabs .box img{
+  	height: 30%;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+
+  }
+
+.PathLabs h1{
+	color:yellow;
+	text-align: center;
+	word-spacing: 5px;
+	text-shadow: 1px 1px white;
+}
+.PathLabs h1 span{
+	color: deeppink;}
+
+.PathLabs .box img{
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px 2px gray;
+
+
+}
+
+
+.PathLabs .box h2{
+	color:#e3e4fa;
+	font-size: 15px;
+}
+
+.PathLabs .box h3{
+  color: #c3fdb8;
+}
+
+.PathLabs .box .button{
+	color:black;
+	background: aqua;
+	border-radius: 7px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  width: 50%;
+  height: 30%;
+
+}
+
+.PathLabs .box .button:hover{
+	background: red;
+	cursor: pointer;
+  color: black;
+}
+ 
+
+ 
+
+	</style>
+</head>
+<body>
+	          <header>
+	           	<div class="container">
+                    <ul>
+            		<li><a href="#Gastroenterologists">Gastroenterologists</a></li>
+            		<li><a href="#Dermatologists">Dermatologists</a></li>
+            		<li><a href="#Cardiologists">Cardiologists</a></li>
+            		<li><a href="#PathLabs">PathLabs</a></li>
+            		
+            		
+            	   </ul>
+
+                </div>
+            </header>
+      <section class="Gastroenterologists" id="Gastroenterologists">
+      	
+      <div class="box">                       
+      <div class="section">
+ 	<img src="depositphotos_391545206-stock-photo-happy-male-medical-doctor-portrait.jpg" alt="">
+
+    <h1>Dr.Mohan Dutta</h1>
+    <h2>MBBS(Gastroenterologists)</h2>
+    <h3>Address-Burdwan hospital</h3>
+ </div>
+ <div class="visit">
+    <h2>Clinic Visit - Fees 400 Rs/-</h2>
+ </div>
+ 
+ <div class="time">
+    <select name="Time" id="">
+	<option value="" disabled selected> Time slot</option>
+	<option value=" Mon(09:00am-01:30pm )"> Mon(9:00am-1:30pm )</option>
+	<option value="Tue(11:00am-03:00pm)"> Tue(11:00am-3:00pm )</option>
+	<option value="Wed(2:00pm-5:00pm )"> Wed(2:00pm-5:00pm )</option>
+	<option value="Fri(04:00pm-06:30pm)"> Fri(04:00pm-06:30pm )</option>
+								
+	</select>
+</div>
+ </div>
+<div class="box">                       
+ <div class="section">
+    <img src="doctor6.jpg" alt="">
+
+    <h1>Dr.Siddhartha Ray</h1>
+    <h2>MBBS(Gastroenterologists)</h2>
+    <h3>Address-Durgapur hospital</h3>
+ </div>
+ <div class="visit">
+    <h2>Clinic Visit - Fees 300 Rs/-</h2>
+ </div>
+ 
+ <div class="time">
+    <select name="Time" id="">
+	<option value="" disabled selected> Time slot</option>
+	<option value=" Sun(09:00am-1:30pm )"> Sun(09:00am-1:30pm )</option>
+	<option value="Mon(11:00am-3:00pm )"> Mon(11:00am-3:00pm )</option>
+	<option value="Thus(2:00pm-5:00pm )"> Thus(2:00pm-5:00pm )</option>
+	<option value="10-12am"> Sat(04:00am-06:30pm)</option>
+								
+	</select>
+ </div>
+</div>
+</section>
+
+
+
+
+ <section class="Dermatologists" id="Dermatologists">
+<div class="box">                       
+ <div class="section">
+    <img src="doctor2.jpg" alt="">
+
+    <h1>Dr.Priya Dey</h1>
+    <h2>MBBS(Dermatologists)</h2>
+    <h3>Address-Katwa hospital</h3>
+ </div>
+ <div class="visit">
+    <h2>Clinic Visit - Fees 450 Rs/-</h2>
+ </div>
+ 
+ <div class="time">
+    <select name="Time" id="">
+	<option value="" disabled selected> Time slot</option>
+	<option value=" Mon(09:00am-01:30pm )"> Mon(08:00am-12:00pm )</option>
+	<option value="11-03pm"> wed(11:00am-2:00pm )</option>
+	<option value="03-06pm"> Thus(4:00pm-6:00pm )</option>
+	<option value="10-12am"> Fri(08:00am-10:00pm )</option>
+								
+	</select>
+ </div>
+
+</div>
+<div class="box">                       
+ <div class="section">
+    <img src="doctor5.JPG" alt="">
+
+    <h1>Dr.Diya Dasghupta</h1>
+    <h2>MBBS(Dermatologists)</h2>
+    <h3>Address-Asansol hospital</h3>
+ </div>
+ <div class="visit">
+    <h2>Clinic Visit - Fees 250 Rs/-</h2>
+ </div>
+ 
+ <div class="time">
+    <select name="Time" id="">
+	<option value="" disabled selected> Time slot</option>
+	<option value=" Mon(11:00am-02:30pm )"> Mon(11:00am-02:30pm )</option>
+	<option value="11-03pm"> Tue(8:00am-10:00pm )</option>
+	<option value="03-06pm"> Wed(3:00pm-5:00pm )</option>
+	<option value="10-12am"> Fri(06:00am-08:30pm )</option>
+								
+	</select>
+ </div>
+
+</div>
+</section>
+
+
+<section class="Cardiologists" id="Cardiologists">
+<div class="box">                       
+ <div class="section">
+    <img src="doctor4.jpg" alt="">
+
+    <h1>Dr.Avishek Laha</h1>
+    <h2>MBBS(Cardiologists)</h2>
+    <h3>Address-Durgapur hospital</h3>
+ </div>
+ <div class="visit">
+    <h2>Clinic Visit - Fees 600 Rs/-</h2>
+ </div>
+ 
+ <div class="time">
+    <select name="Time" id="">
+	<option value="" disabled selected> Time slot</option>
+	<option value=" Mon(09:00am-01:30pm )"> Mon(09:00am-01:30pm )</option>
+	<option value="11-03pm"> Tue(11:00am-03:00pm )</option>
+	<option value="03-06pm"> Wed(2:00pm-5:00pm )</option>
+	<option value="10-12am"> Fri(04:00am-06:30pm )</option>
+								
+	</select>
+ </div>
+
+</div>
+
+</section>
+</div>
+
+<section class="PathLabs" id="PathLabs">
+	<h1 class="heading"><span>P</span>ath <span>L</span>ab</h1>
+	<div class="box">
+		<div>
+		<img src="thyroid.jpg" alt="">
+		<h2>THYROID</h2>
+	  <h3>Fees 500 Rs/-</h3>
+
+	</div>
+	     <div>
+		<img src="temp.jpg" alt="">
+		<h2>FEVER</h2>
+		<h3>Fees 300 Rs/-</h3>
+
+
+	</div>
+	
+	   <div>
+		<img src="3650483-200.png" alt="">
+		<h2>DIABETES</h2>
+		<h3>Fees 600 Rs/-</h3>
+
+
+	   </div>
+	   <div>
+		<img src="download (5).jpg" alt="">
+		<h2>CARDIO</h2>
+		<h3>Fees 700 Rs/-</h3>
+
+
+	</div>
+	
+	   <div>
+		<img src="5560092.png" alt="">
+		<h2>KIDNEY</h2>
+		<h3>Fees 600 Rs/-</h3>
+ 
+
+	</div>
+	    <div>
+		<img src="liver1.jpg" alt="">
+		<h2>LIVER</h2>
+		<h3>Fees 400 Rs/-</h3>
+ 
+
+	</div>
+	<div>
+		<img src="images.png" alt="">
+		<h2>FULL BODY</h2>
+		<h3>Fees 900 Rs/-</h3>
+
+
+	</div>
+	<div>
+		<img src="VITAMIN.jpg" alt="">
+		<h2>VITAMIN</h2>
+		<h3>Fees 300 Rs/-</h3>
+
+
+	</div>
+	<div>
+		<img src="URIEN.jpg" alt="">
+		<h2>URINE</h2>
+    <h3>Fees 400 Rs/-</h3>
+  </div>
+   <div>
+    <h1>Choose Your Nearest <span>HealthCare</span> Clinic</h1>
+		<center><a href="bookatest.php"><input type="submit" value="Book a test" class="button" name="submit"> </a></center>
+
+	</div>
+	</div>
+	
+</section>
+<script>
+
+
+	
+</script>
+
+
+                        
+                    
+
+
+           
+
+
+
+
+</body>
+</html>

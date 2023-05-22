@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Choose a doctor</title>
+<style type="text/css">
+
+	body{
+
+		background-color: #29465B;
+	}
+
+.inputbox input,select{
+	height: 3rem;
+  width: 49%;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  color:var(--black);
+  text-align: center;
+  color: #000000;
+  border-radius: 10px;
+  border-color: #EB5406;
+}
+.inputbox{
+	text-align: center;
+
+}
+ .section img{
+	height: 10rem;
+  width:10rem;
+  margin-left: 2rem;
+  box-shadow: 2px 2px 2px 2px green;
+  margin-top: 10px;
+  
+}
+
+
+.visit{
+	border-color:red;
+	border-style:inset;
+	border-width: 1px;
+	height: 2rem;
+  width:20%;
+  padding: 0 0;
+  margin: 1rem 1rem;
+  font-size:60%;
+  padding-bottom: 4px;
+  background-color: red;
+  color: lightyellow;
+  box-shadow: 5px 5px white;
+  text-align: center; 
+  margin-top: 10rem;
+
+
+
+}
+
+
+.visit:hover{
+	background-color: olive;
+	box-shadow: .1rem .5rem var(--blue),0 .3rem .5rem rgba(0,0,0,.3);
+}
+.section{
+	text-align: left;
+	margin-left: 2rem;
+
+
+
+
+}
+
+.inputbox .time{
+	text-align: left;
+	height:1rem;
+  width:10%;
+  padding: 0 0;
+  margin: 1rem 3rem;
+  font-size:1rem;
+  padding-bottom: 4px;
+
+
+  }
+  .section h1{
+  	color: tomato;
+
+  }
+  .section h2, h3{
+  	color: whitesmoke;
+
+  }
+  
+  .time{
+  	width: 30%;
+  	margin-left: 3rem;
+  	margin-top: 9rem;
+
+
+
+}
+  .box{
+  	display: flex;
+  	box-shadow: 1px 1px 1px 1px white;
+  	margin-top: 10px;
+  }
+
+  
+  
+
+ 
+
+ 
+
+	</style>
+</head>
+<body>
+ <div class="inputbox">
+	<select name="Department"  id="">
+
+	<option value="" disabled selected>Search by department</option>
+	<option value="Family Physician">Family Physician</option>
+
+    <option value="Gastroenterologists">Gastroenterologists</option>
+    <option value="Dermatologists">Dermatologists</option>
+    <option value="Cardiologists">Cardiologists</option>
+    <option value="Neurologists">Neurologists</option>
+    </select>
+ </div>
+
+  
+<div class="box">
+ <div class="section">
+    <img src="depositphotos_391545206-stock-photo-happy-male-medical-doctor-portrait.jpg" alt="">
+    <h1>Dr.Mohan Dutta</h1>
+    <h2>MBBS(Gastroenterologists)</h2>
+    <h3>Address-Burdwan hospital</h3>
+ </div>
+ 
+ <div class="visit">
+    <h2>Clinic Visit - Fees 400 Rs/-</h2>
+                            	
+ </div>
+ 
+ <div class="time">
+    <select name="Time" id="">
+	    <option value="" disabled selected> Time slot</option>
+        <option value=" Mon(09:00am-01:30pm )"> Mon(09:00am-01:30pm )</option>
+		<option value="11-03pm"> Tue(11:00am-03:00pm )</option>
+		<option value="03-06pm"> Wed(2:00pm-5:00pm )</option>
+		<option value="10-12am"> Fri(04:00am-06:30pm )</option>
+								
+	</select>
+ </div>
+</div>
+
+ <div class="box">                       
+ <div class="section">
+    <img src="depositphotos_391545206-stock-photo-happy-male-medical-doctor-portrait.jpg" alt="">
+
+    <h1>Dr.Siddhartha Ray</h1>
+    <h2>MBBS MD(Gastroenterologists)</h2>
+    <h3>Address-Durgapur hospital</h3>
+ </div>
+ <div class="visit">
+    <h2>Clinic Visit - Fees 300 Rs/-</h2>
+ </div>
+ 
+ <div class="time">
+    <select name="Time" id="">
+	<option value="" disabled selected> Time slot</option>
+	<option value=" Mon(09:00am-01:30pm )"> Sun(09:00am-01:30pm )</option>
+	<option value="11-03pm"> Mon(11:00am-03:00pm )</option>
+	<option value="03-06pm"> Thus(2:00pm-5:00pm )</option>
+	<option value="10-12am"> Sat(04:00am-06:30pm )</option>
+								
+	</select>
+ </div>
+
+</div>
+
+<div class="box">                       
+ <div class="section">
+    <img src="depositphotos_391545206-stock-photo-happy-male-medical-doctor-portrait.jpg" alt="">
+
+    <h1>Dr.Priya Dey</h1>
+    <h2>MBBS(Dermatologists)</h2>
+    <h3>Address-Katwa hospital</h3>
+ </div>
+ <div class="visit">
+    <h2>Clinic Visit - Fees 450 Rs/-</h2>
+ </div>
+ 
+ <div class="time">
+    <select name="Time" id="">
+	<option value="" disabled selected> Time slot</option>
+	<option value=" Mon(09:00am-01:30pm )"> Mon(08:00am-12:00pm )</option>
+	<option value="11-03pm"> wed(11:00am-2:00pm )</option>
+	<option value="03-06pm"> Thus(4:00pm-6:00pm )</option>
+	<option value="10-12am"> Fri(08:00am-10:00pm )</option>
+								
+	</select>
+ </div>
+
+</div>
+
+<div class="box">                       
+ <div class="section">
+    <img src="depositphotos_391545206-stock-photo-happy-male-medical-doctor-portrait.jpg" alt="">
+
+    <h1>Dr.Diya Dasghupta</h1>
+    <h2>MBBS(Dermatologists)</h2>
+    <h3>Address-Asansol hospital</h3>
+ </div>
+ <div class="visit">
+    <h2>Clinic Visit - Fees 250 Rs/-</h2>
+ </div>
+ 
+ <div class="time">
+    <select name="Time" id="">
+	<option value="" disabled selected> Time slot</option>
+	<option value=" Mon(11:00am-02:30pm )"> Mon(11:00am-02:30pm )</option>
+	<option value="11-03pm"> Tue(8:00am-10:00pm )</option>
+	<option value="03-06pm"> Wed(3:00pm-5:00pm )</option>
+	<option value="10-12am"> Fri(06:00am-08:30pm )</option>
+								
+	</select>
+ </div>
+
+</div>
+
+
+<div class="box">                       
+ <div class="section">
+    <img src="depositphotos_391545206-stock-photo-happy-male-medical-doctor-portrait.jpg" alt="">
+
+    <h1>Dr.Avishek Laha</h1>
+    <h2>MBBS(Cardiologists)</h2>
+    <h3>Address-Durgapur hospital</h3>
+ </div>
+ <div class="visit">
+    <h2>Clinic Visit - Fees 600 Rs/-</h2>
+ </div>
+ 
+ <div class="time">
+    <select name="Time" id="">
+	<option value="" disabled selected> Time slot</option>
+	<option value=" Mon(09:00am-01:30pm )"> Mon(09:00am-01:30pm )</option>
+	<option value="11-03pm"> Tue(11:00am-03:00pm )</option>
+	<option value="03-06pm"> Wed(2:00pm-5:00pm )</option>
+	<option value="10-12am"> Fri(04:00am-06:30pm )</option>
+								
+	</select>
+ </div>
+
+</div>
+
+
+
+
+                        
+                    
+
+
+           
+
+
+
+
+</body>
+</html>
